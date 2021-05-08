@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple High Low Game</title>
+    <script type="text/javascript"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var play = true;
+      var luckyNo = Math.floor(Math.random() * 100) + 1;
+      while (play == true) {
+        var guess = parseInt(prompt("Please enter a number between 1 to 100"));
+        if (guess < luckyNo) {
+          alert("Number too low!");
+          continue;
+        } else if (guess > luckyNo) {
+          alert("Number too high!");
+          continue;
+        } else if (guess == luckyNo) {
+          alert("Yes! Congratulations!");
+          var playing = prompt("Continue to play?");
+          if (playing == "yes") {
+			  luckyNo = Math.floor(Math.random() * 100) + 1;
+          }
+		  else if (playing == "no") {
+			  play = false;
+		  }
+        }
+      }
+      alert("Bye!!");
+      window.close(); // close the window
+    </script>
+  </body>
+</html>
