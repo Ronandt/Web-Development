@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pratical 6 - Javascript</title>
+    <style>
+      p {line-height: 0;}
+    </style>
   </head>
   <body>
+    <button onclick="foo()">Click me!</button>
     <script>
-      var text = "";
-      for (var i = 50; i === 100; i++) {
-        text += "Line" + i + "<br>";
+      function foo() {
+      for (var i = 50; i <= 100; i++) {
+        document.write("<span>" + "Line " + i + "</span><br>");
       }
-      document.write(text)
       document.write("The End");
+    }
     </script>
+
   </body>
 </html>

@@ -1,0 +1,53 @@
+* {
+  font-family: Verdana, Arial;
+}
+
+#div1 {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+}
+
+span {
+  font-style: italic;
+  font-size: 1.2em;
+  color: gray;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+                                        
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  background-color: pink;
+}       
+
+caption {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+td {
+  padding: 12px;
+}
+
+#div2 {
+  text-align: center;
+  font-size: 12px;
+}
+
+h1:hover {
+  color: yellow;
+}
