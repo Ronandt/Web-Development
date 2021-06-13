@@ -7,25 +7,21 @@
   </head>
   <body>
     <script type="text/javascript">
-      var play = true;
       var luckyNo = Math.floor(Math.random() * 100) + 1;
-      while (play == true) {
+      while (69) {
         var guess = parseInt(prompt("Please enter a number between 1 to 100"));
         if (guess < luckyNo) {
           alert("Number too low!");
-          continue;
         } else if (guess > luckyNo) {
           alert("Number too high!");
-          continue;
         } else if (guess == luckyNo) {
           alert("Yes! Congratulations!");
           var playing = prompt("Continue to play?");
           if (playing == "yes") {
-			  luckyNo = Math.floor(Math.random() * 100) + 1;
+            luckyNo = Math.floor(Math.random() * 100) + 1;
+          } else if (playing == "no") {
+            break;
           }
-		  else if (playing == "no") {
-			  play = false;
-		  }
         }
       }
       alert("Bye!!");
