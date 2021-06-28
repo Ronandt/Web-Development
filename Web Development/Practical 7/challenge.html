@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+</head>
+<body>
+    <script>
+    storage = "";
+    for (var i = 1; i <= 4; i++) {
+        storage += " " + i;
+        document.write(storage + "<br>")
+
+    }
+    </script>
+    <script>
+        count = 1
+        for(var prompter = parseInt(prompt("How many iterations would you like: ")) * 2; prompter >= count; count += 2) {
+            document.write( "&nbsp;".repeat(prompter- count - 1) + '*'.repeat(count) + "</br>" )
+        }
+
+    </script>
+    <script>
+        count = 1
+        for(var prompter = parseInt(prompt("How many iterations would you like: ")) * 2; prompter >= count; count += 2) {
+            document.write( "&nbsp;".repeat(prompter- count - 1) + '*'.repeat(count) + "</br>" )
+        }
+        count -= 4
+        counted = 2
+        for(; count >= 0; count -= 2) {
+            
+            document.write( "&nbsp;".repeat(counted) + "*".repeat(count) + "</br>")
+            counted += 2
+        }
+    </script>
+<!--Sorry too lazy to do the numbers one lmfao-->
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q2</title>
+  </head>
+  <body>
+    <script>
+      var total = 0;
+      for (
+        var prompter = parseInt(
+          prompt("What numer do you want to sum from 1: ")
+        );
+        prompter > 0;
+        prompter--
+      ) {
+        total += prompter;
+      }
+      document.write("<p>" + "Sum = " + total + "<p>");
+    </script>
+
+    <script>
+      var total = 0;
+      var prompter = parseInt(prompt("What numer do you want to sum from 1: "));
+      if (prompter >= 2) {
+        for (; prompter > 0; prompter--) {
+          if (prompter % 2 == 0) {
+            total += prompter;
+          }
+        }
+        document.write("<p>" + "Sum = " + total + "<p>");
+      } else {
+        document.write("Input value cannot be less than 2!");
+      }
+    </script>
+    <script>
+        var start = parseInt(prompt("Enter start number"));
+        var end = parseInt(prompt("Enter end number"));
+        while (start <= end) {
+            document.write("<p>" + start  + "<p>");
+            start += 1
+        }
+
+    </script>
+    <script>
+        var years = parseInt(prompt("How many years: "));
+        var depo = parseInt(prompt("What is your deposit: "));
+        document.write((depo * (1 + 0.02) ** years) - depo)
+    </script>
+    <script>
+        var total = 0;
+        do {
+            v = parseInt(prompt("What is the number: "));
+            total += v
+        }
+        while (v != 0)
+        document.write("<p>" + total + "<p>");
+    </script>
+  </body>
+</html>
