@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prac</title>
+</head>
+<body>
+    <script>
+    var names = ["Ali","Ben Ben","Carthy","Darshini"];
+    document.write("<ol>");
+        for (const x of names) {
+            document.write("<li>" + x + "</li>")
+        }
+
+    document.write("</ol>");
+    </script>
+    <script>
+        scores = [67, 90, 88, 70];
+        for (const u of scores) {
+            document.write(u + "<br>");
+        }
+        document.write(scores.reduce((a,b) => a + b, 0))
+    </script>
+    <script>
+        students = []
+        scores = []
+
+        for (counter = 0; counter < 4; counter++) {
+            students.push(prompt("Please enter student's name"))
+        }
+        for (counter = 0; counter < 4; counter++) {
+            scores.push(prompt("Please enter " + students[counter] + " score"))
+
+        }
+        document.write("<ol>")
+        for (counter = 0; counter < 4; counter++) {
+            document.write("<li>" + students[counter] + " scored " +  scores[counter] + " </li>")
+        }
+        document.write("</ol>")
+
+        
+    </script>
+    <script>
+        var a = {student : "ali", score : '89'};
+        document.write("name:" + a[student] + "<br>" + "score:" + a[score])
+    </script>
+
+</body>
+</html>

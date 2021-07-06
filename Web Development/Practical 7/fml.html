@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var initial_x = Math.floor(Math.random() * 51);
+        var initial_y = Math.floor(Math.random() * 51);
+        function Battleship(initial_x, initial_y) {
+            var counter = 0
+            do {
+                x = prompt("X-coordinate: ");
+                y = prompt("Y-coordinate: ");
+                if (Math.abs(x - initial_x) > 5 && Math.abs(y-initial_y) > 5) {
+                    counter++
+                    alert("Missed!!!")
+                }
+                else if (Math.abs(x - initial_x) <= 5 && Math.abs(y - initial_y) <= 5) {
+                    counter++
+                    alert("Close!")
+                }
+                else {
+                    alert("Hit!")
+                    break
+                }
+                alert("You have " + 5 - counter + "hits left")
+
+            } while(counter < 5)
+            query = prompt("Do you want to play again? (Yes/Cancel)")
+            if (query == "Yes") {
+                initial_x = Math.floor(Math.random() * 51);
+                initial_y = Math.floor(Math.random() * 51);
+                Battleship(initial_x, initial_y)
+
+            }
+            else if (query == "Cancel") {
+                alert("Bye!")
+            }
+
+
+        }
+
+        Battleship(initial_x, initial_y)
+    </script>
+</body>
+</html>
