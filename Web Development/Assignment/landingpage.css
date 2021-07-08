@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    background-color: #1e2124;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.size_bg {
+  height: 100%;
+  background: url("TAE07158_Edit.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  filter: brightness(100%);
+}
+
+.typing_header {
+  color: white;
+  font-size: 500%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.typing_header_2 {
+  color: white;
+  font-size: 235%;
+  text-decoration-line: overline;
+  text-decoration-color: white;
+  margin: 20px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 1);
+  justify-content: flex-end;
+  font-size: 25px;
+  justify-content: space-evenly;
+  position: relative;
+  color: white;
+}
+
+.current_page {
+  text-decoration-line: underline;
+}
+
+#introduction_header {
+    text-align: center;
+    font-size: 250%;
+    padding-top: 50px;
+    color: white;
+    padding-bottom: 50px;
+    
+
+}
+
+.keyboard_intro_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#display_paragraph {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#img_kuro {
+    height: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+
+#para_intro_length {
+    width: 60ch;
+}
+
+svg {
+    margin-top: 50px;
+}
