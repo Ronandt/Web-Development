@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,8 +23,7 @@ body {
 
 .size_bg {
   height: 100%;
-  background: url("TAE07158_Edit.jpg");
-  background-position: center;
+  background: url("./images/shashin_majin.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -30,21 +32,24 @@ body {
   align-items: center;
   flex-direction: column;
   filter: brightness(100%);
+ 
 }
 
 .typing_header {
-  color: white;
+  color: #ffffff;
   font-size: 500%;
   margin: 0px;
   padding: 0px;
+  
 }
 
 .typing_header_2 {
-  color: white;
+  color: #c5c5c5;
   font-size: 235%;
   text-decoration-line: overline;
-  text-decoration-color: white;
+  text-decoration-color: rgb(71, 71, 71);
   margin: 20px;
+
 }
 
 .navigation {
@@ -64,10 +69,11 @@ body {
 
 #introduction_header {
     text-align: center;
-    font-size: 250%;
+    font-size: 3.5em;
     padding-top: 50px;
-    color: white;
-    padding-bottom: 50px;
+    color: #c4c4aa;
+
+    font-family: "Inter"
     
 
 }
@@ -76,13 +82,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: white;
+    width: 700px;
+    box-shadow: 10px 20px 20px black;
 
 }
 
 #display_paragraph {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
+    font-size: 100px;
+
+
 }
 
 #img_kuro {
@@ -92,9 +101,50 @@ body {
 }
 
 #para_intro_length {
-    width: 60ch;
+    width: 65ch;
+    font-weight: bold;
 }
 
 svg {
     margin-top: 50px;
+    margin-bottom: 0;
+    
 }
+
+.flex_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+img[src="./images/kuro_shiro.jpg"] {
+  box-shadow: 10px 20px 20px black
+}
+
+img[alt="switch"] {
+  position: relative;
+  height: 150px;
+  top: 290px;
+  left: 760px;
+}
+
+img[alt="switch1"] {
+  position: relative;
+  height: 150px;
+  top: 290px;
+  left: 70px;
+}
+
+.white_section {
+  background-color: white;
+  position: relative;
+  bottom: 4px;
+
+}
+
+.discord_gray {
+  color:rgb(71, 71, 71);
+  text-align: center;
+  font-size: 60px;
+}
+
