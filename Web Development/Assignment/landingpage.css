@@ -222,10 +222,11 @@ img[src="./images/redkb.jpg"] {
   flex-wrap: wrap;
 }
 
-.third_section {
+.cave_section {
   background-color: #f6f6f6;
   position: relative;
   bottom: 58px;
+
 }
 
 .flex_footer > div {
@@ -294,4 +295,19 @@ img[src="./images/redkb.jpg"] {
 
 .flex_footer img {
   width: 300px;
+}
+
+#svgcrack {
+  position: relative;
+  bottom: 108px;
+}
+
+img[alt="geekhack"] {
+  height: 165px;
+
+}
+
+#adjust {
+  position: relative;
+  bottom: 150px;
 }
