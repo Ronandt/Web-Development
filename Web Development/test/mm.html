@@ -1,30 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-  </head>
-  <body>
-    <img
-      class="thumbnail"
-      src="kuro_shiro2.jpg"
-      alt="image"
-      style="background-repeat: no-repeat"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"
-    >
-         var image = document.getElementsByClassName('thumbnail');
-      new simpleParallax(image, {
-      	orientation: 'right'
-      });;
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <label>
+    First Number <input  id="first" type="number"/>
+    </label>
+    <script>
+      var value1=document.getElementById("first").value;
+      document.getElementById("p").innerHTML = value1;
+
     </script>
-  </body>
+    <p id="p"></p>
+</body>
 </html>
