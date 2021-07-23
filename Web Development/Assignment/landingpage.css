@@ -5,25 +5,9 @@
   overflow-x: hidden;
 }
 
-.flex_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  gap: 40px;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  font-size: 25px;
-  color: white;
-  font-family: "Varela";
-  padding-top: 50px;
-  padding-right: 200px;
+body {
+  z-index: 0;
   position: relative;
-  z-index: 3;
 }
 
 .flex_gal {
@@ -170,7 +154,6 @@ hr {
 img[src="./images/kuro_shiro.jpg"] {
   -webkit-box-shadow: 10px 20px 20px black;
   box-shadow: 10px 20px 20px black;
-  
 }
 
 .flex_gal div img {
@@ -241,15 +224,6 @@ img[src="./images/kuro_shiro.jpg"] {
   color: rgb(235, 230, 230) !important;
 }
 
-
-
-.blue {
-  color: #185875;
-}
-.yellow {
-  color: #fff842;
-}
-
 .container th h1 {
   font-weight: bold;
   font-size: 1em;
@@ -261,7 +235,6 @@ img[src="./images/kuro_shiro.jpg"] {
   font-weight: normal;
   font-size: 1em;
   -webkit-box-shadow: 0 2px 2px -2px #0e1119;
-  -moz-box-shadow: 0 2px 2px -2px #0e1119;
   box-shadow: 0 2px 2px -2px #0e1119;
 }
 
@@ -283,12 +256,12 @@ img[src="./images/kuro_shiro.jpg"] {
 
 /* Background-color of the odd rows */
 .container tr:nth-child(odd) {
-  background-color:#323445
+  background-color: #323445;
 }
 
 /* Background-color of the even rows */
 .container tr:nth-child(even) {
-  background-color:rgb(46, 45, 56)
+  background-color: rgb(46, 45, 56);
 }
 
 .container th {
@@ -296,13 +269,12 @@ img[src="./images/kuro_shiro.jpg"] {
 }
 
 .container td:first-child {
-  color:rgb(247, 46, 46);
+  color: rgb(247, 46, 46);
 }
 
 .container tr:hover {
   background-color: #464a52;
   -webkit-box-shadow: 0 6px 6px -6px #0e1119;
-  -moz-box-shadow: 0 6px 6px -6px #0e1119;
   box-shadow: 0 6px 6px -6px #0e1119;
 }
 
@@ -311,12 +283,24 @@ img[src="./images/kuro_shiro.jpg"] {
   color: #000000;
   font-weight: bold;
 
+  -webkit-box-shadow: #7f7c21 -1px 1px, #7f7c21 -2px 2px, #7f7c21 -3px 3px,
+    #7f7c21 -4px 4px, #7f7c21 -5px 5px, #7f7c21 -6px 6px;
+
   box-shadow: #7f7c21 -1px 1px, #7f7c21 -2px 2px, #7f7c21 -3px 3px,
     #7f7c21 -4px 4px, #7f7c21 -5px 5px, #7f7c21 -6px 6px;
+  -webkit-transform: translate3d(6px, -6px, 0);
   transform: translate3d(6px, -6px, 0);
 
+  -webkit-transition-delay: 0s;
+
+  -o-transition-delay: 0s;
+
   transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
 
@@ -329,9 +313,21 @@ caption {
 
 footer {
   text-align: center;
-  background-color: black;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#1e2124),
+    to(black)
+  );
+  background-image: -o-linear-gradient(#1e2124, black);
+  background-image: linear-gradient(#1e2124, black);
+  height: 450px;
+}
+.neon_button {
+  top: 200px;
 }
 
-footer > h2 { 
-  margin-top: 50px;
+small {
+  top: 300px;
 }

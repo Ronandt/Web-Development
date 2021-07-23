@@ -26,12 +26,18 @@
     <title>Mechanical Keyboards</title>
   </head>
   <body>
-    <div class="size_bg">
+    <div class="size_bg" id="home">
       <nav>
-        <div class="navigation">
-          <div>Home</div>
-          <div>Keyboards</div>
-          <div>Music</div>
+        <div class="flex_navigator">
+          <div>
+            <a href="./landingpage.html">Home</a>
+          </div>
+          <div>
+            <a href="./kbpage.html">Keyboards</a>
+          </div>
+          <div>
+            <a href="./contact.html">Contact</a>
+          </div>
         </div>
       </nav>
       <header>
@@ -110,7 +116,7 @@
       <h2 class="discord_gray" style="margin-bottom: 50px">
         Portfolio of Keyboards
       </h2>
-      <div class="flex_gallery">
+      <div class="flex_gallery" id=gap_showcase">
         <div>
           <img src="./images/kuro_shiro2.jpg" />
         </div>
@@ -209,9 +215,12 @@
         Keybord Forums that I like
       </h2>
       <div class="flex_footer">
-        <div><img src="./images/github.jpeg" alt="Github" /></div>
-        <div><img src="./images/Reddit.png" /></div>
-        <div><img src="./images/geekhack.png" alt="geekhack" /></div>
+        <div>
+          <img src="./images/keebt.jpeg" alt="keebtalk" />
+          <p>I like Keebtalk due to its modern user interface and clean website. They strive to try new things for their website and are willing to change. The community is very active as well.</p>
+        </div>
+        <div><img src="./images/Reddit.png" /><p>The r/mk subreddit contains a diversified community from all around the globe. It contains many resources for beginners and is really what got me interested in mechanical keyboards</p></div>
+        <div><img src="./images/geekhack.png" alt="geekhack" /><p>Geekhack will always hold a special place in my heart due to a very warm community there. They are the main forums for group buys and interest checks that spurs the market.</p></div>
       </div>
     </div>
     <svg
@@ -226,12 +235,13 @@
       ></path>
     </svg>
 
-    <div id="adjust">
-      <h2 class="discord_gray" style="color: white">Resources</h2>
-      <table>
-        <th>Items</th>
-      </table>
-    </div>
+    <footer>
+      <a href="#home" class="neon_button">Go back to the top</a>
+      <small><p>Copyright 2021 &copy; Declan Kuok. If you use this, please give me attribution. Thank you.</p></small>
+    </footer>
+    
+
+
     <!--no scroll don't touch-->
   </body>
 </html>

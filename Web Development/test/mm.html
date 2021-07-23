@@ -7,14 +7,13 @@
   <title>Document</title>
 </head>
 <body>
-  <label>
-    First Number <input  id="first" type="number"/>
-    </label>
-    <script>
-      var value1=document.getElementById("first").value;
-      document.getElementById("p").innerHTML = value1;
-
-    </script>
-    <p id="p"></p>
+  <input type="button" onclick="foo()" value="thing" title="DOM Manipulation">
+  <script>
+    function foo() {  document.querySelector("div").innerHTML = "thing"}
+  </script>
+  
+  <div></div>
+  
+  
 </body>
 </html>
