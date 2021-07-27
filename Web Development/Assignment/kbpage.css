@@ -50,7 +50,13 @@ html {
 }
 
 header {
-  margin-top: 150px
+  margin-top: 100px;
+  width: 900px;
+  margin-right: 600px
+}
+
+.flex_navigator {
+  margin-top: 80px;
 }
 
 .current_page {
@@ -307,21 +313,37 @@ small {
   visibility: visible
 }
 
-@media only screen and (max-width: 1366px) {
+@media (max-width: 1548px) {
+  header {
+    position: relative;
+    left: 100px
+  }
+}
+
+@media (max-width: 1366px) {
   img#img_kuro {
     width: 700px;
   }
+
+  header {
+    left: 250px
+  }
 }
-@media only screen and (max-width: 1005px) {
+@media (max-width: 1005px) {
   .flex_navigator {
     margin-right: 500px;
   
-    margin-top: 100px;
+   
 
+  }
+
+  header {
+    left: 350px;
+    top: 50px
   }
 }
 
-@media only screen and (max-width: 989px) {
+@media (max-width: 989px) {
   .visibility {
     visibility: hidden;
   }
@@ -332,14 +354,26 @@ small {
   }
 }
 
-
-@media only screen and (max-width: 618px) {
-  .flex_navigator {
-   
-  
-    margin-top: 130px;
-
+@media (max-width: 808px ) {
+  header {
+    width: 600px;
   }
+
+  header div h1.typing_header{
+    font-size: 50px;
+  }
+  header div h2.typing_header_2  {
+    font-size: 30px;
+  }
+
+  .flex_navigator {
+    margin-bottom: 40px;
+  }
+}
+
+
+@media (max-width: 618px) {
+  
 
   h2#introduction_header {
     font-size: 40px;
@@ -355,17 +389,17 @@ small {
   .visibility {
     visibility: hidden;
   }
-}
-
-
-@media (max-width: 579px) {
-  .flex_navigator {
-   
-  
-    margin-top: 230px;
+  header {
+    width: 390px;
 
   }
+
+  .flex_navigator {
+    margin-bottom: -80px;
+  }
 }
+
+
 @media (max-width:  433px) {
   .flex_navigator {
    

@@ -17,6 +17,7 @@
 
 header {
   margin-right: 40%;
+
 }
 
 #center {
@@ -174,12 +175,37 @@ h2.discord_gray {
 }
 
 .flex_navigator div {
-    margin-top: 30px;
+  margin-bottom: 80px;
     
   }
+  @media (max-width: 808px) {
+  header {
+      width: 900px;
+  }
+}
 
+@media (max-width: 723px) {
+header {
+    width: 700px;
+    left: 200px;
+    top: -100px;
+}
+}
 
+@media (max-width: 1005px) {
+header {
+    left: 300px;
+    top: 0px;
+}
+}
 
+@media (max-width: 723px) {
+header {
+    width: 700px;
+    left: 200px;
+    
+}
+}
 @media (max-width: 584px) {
     .container {
         max-width: 100%;
@@ -207,7 +233,17 @@ h2.discord_gray {
     .typing_header, .typing_header_2 {
       width: 400px;
     }
+    .flex_navigator {
+      margin-top: 200px;
+    }
 }
 
 
+@media (max-width: 560px) {
+header {
+    width: 700px;
+    left: 70px;
+    margin-top: 200px;
+}
+}
 
