@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <title>This is my website</title>
-</head>
-<body>
-  <h1>Welcome to XXX Website</h1>
-  <img src="baby.png" alt="baby">
-  <hr>
-  <section>
-  <h2>About Me</h2>
-  <p>I am a very imaginative person.<br>I dream day and night. Wanna talk to me, got to wake me up</p>
-  </section>
-  <section>
-  <h2>My School</h2>
-  <p>I am currently studying at <a href="https://www.nyp.edu.sg" target="_blank">NYP</a> in School of IT</p>
-  <p>There are 5 diplomas in School of IT</p>
-  <ol>
-    <li>Diploma in Business and Financial Informatics</li>
-    <li>Diploma in Buisiness Intelligence & Analytics</li>
-    <li>Diploma in Cyber Security and Forensics</li>
-    <li>Diploma in Infocomm & Security</li>
-    <li>Diploma in Information Tecnology</li>
-  </ol>
-  </section>
-  <p>I am learning how to make a website using html tags. See my learning progress at <img src="studyRecord.png" alt="study book"></p>
-  <footer>
-  <p>xxx copyright &copy;</p>
-  </footer>
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Students Results</h1>
+    <ul>
+
+    </ul>
+    <form class="" >
+    <label for="">Enter Student Name<input type="text" name="" value="" id = 'studName'></label>
+    <label for="">  Results
+      <select class="" name="">
+      <option value="PASS">PASS</option>
+      <option value="FAIL">FAIL</option>
+      <option value="BORDERLINE">BORDERLINE</option>
+      </select>
+    </label>
+    <input type="submit" name="" value="Add" >
+    </form>
+
+    <script type="text/javascript">
+      var form = document.querySelector("form")
+      var input = document.querySelector("select option")
+      var input2 = document.getElementById("studName")
+      var todoList = document.querySelector("ul")
+      form.addEventListener('submit',function(e){
+          e.preventDefault();
+          toDoMaker(input.value);
+
+          // Removes text entered after form is submitted
+      });
+      var toDoMaker = function(text){
+          var todo = document.createElement('li')
+
+          todo.textContent = input2.value
+          todoList.appendChild(todo);
+      }
+    </script>
+  </body>
 </html>
