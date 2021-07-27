@@ -109,3 +109,23 @@ small {
   position: relative;
 }
 
+@media (max-width: 1616px) {
+  .flex_navigator {
+    padding-right: 70%
+
+  }
+}
+
+@media (max-width: 1326px) {
+  .flex_navigator {
+    padding-right: 100%
+
+  }
+}
+
+
+@media (max-width: 561px)  {
+  a[href="#headbackground"], a[href="#home"]{
+    font-size: 35px !important; 
+  }
+}

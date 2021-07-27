@@ -9,6 +9,8 @@
   margin: 0;
 }
 
+
+
 .navigation {
   bottom: 10px;
 }
@@ -154,14 +156,29 @@ small {
     top: 300px;
 }
 
-footer {
-    background-image: linear-gradient(rgba(30, 33, 36, 0.11), rgba(0, 0, 0, 0.308))
+.flex_gallery {
+  margin-top: 100px;
+}
+.flex_gallery > div > p{
+  color:#8A87F2;
+  font-size: 30px;
 }
 
-.flex_navigator {
-    margin-top: 100px;
-    left:710px;
+.discord_gray {
+  margin-top: 100px;
+}
+
+h2.discord_gray {
+  position: relative;
+  top: 50px;
+}
+
+.flex_navigator div {
+    margin-top: 30px;
+    
   }
+
+
 
 @media (max-width: 584px) {
     .container {
@@ -172,5 +189,25 @@ footer {
         margin-bottom: 15px;
         width: 100%;
     }
-    
+
+    .typing_header, .typing_header_2, div.social_flex{
+      margin-left: 200px;
+      position: relative;
+      bottom: 100px
+      
+     
+    }
+
+
+    .flex_navigator div {
+      margin-bottom: 100px;
+    }
+
+
+    .typing_header, .typing_header_2 {
+      width: 400px;
+    }
 }
+
+
+
